@@ -30,8 +30,6 @@ body {
 	// margin-right: auto;
 	background-color: var(--clr-black);
 	color: var(--clr-white);
-
-	// use the font family 'Mark' from the fonts folder
 	font-family: "EBGaramond-Regular", sans-serif;
 
 	display: grid;
@@ -88,7 +86,7 @@ main {
 
 	h1 {
 		position: relative;
-		font-size: 4rem;
+		font-size: 6rem;
 		z-index: 2;
 	}
 }
@@ -147,6 +145,7 @@ footer {
 	grid-row: 15 / 17;
 	height: 100%;
 	color: var(--clr-grey);
+	font-family: "Mark-Regular", sans-serif;
 
 	.subgrid {
 		height: 100%;
@@ -158,6 +157,7 @@ footer {
 		address {
 			margin-left: auto;
 			margin-right: auto;
+			font-style: unset;
 		}
 
 		a {
