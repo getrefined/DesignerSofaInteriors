@@ -157,6 +157,7 @@ footer {
 }
 footer .subgrid {
   height: 100%;
+  padding-bottom: 1rem;
 }
 @media (min-width: 785px) {
   footer .subgrid {
@@ -216,12 +217,16 @@ footer .subgrid a {
   }
 }
 
+.email {
+  padding-bottom: 1rem;
+}
 @media (min-width: 785px) {
   .email {
     grid-column: 5;
     grid-row: 1;
     position: relative;
     top: 1rem;
+    padding-bottom: unset;
   }
 }
 @media (min-width: 1000px) {
