@@ -1,0 +1,165 @@
+:root {
+	--clr-white: rgb(255 255 255);
+	--clr-black: rgb(0 0 0);
+	--clr-grey: rgb(186 188 184);
+}
+
+@font-face {
+	font-family: "EBGaramond-Bold";
+	src: url("fonts/EBGaramond-Bold.otf");
+}
+
+@font-face {
+	font-family: "EBGaramond-Medium";
+	src: url("fonts/EBGaramond-Medium.otf");
+}
+
+@font-face {
+	font-family: "EBGaramond-Regular";
+	src: url("fonts/EBGaramond-Regular.otf");
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	// max-width: 150ch;
+	// margin-left: auto;
+	// margin-right: auto;
+	background-color: var(--clr-black);
+	color: var(--clr-white);
+
+	// use the font family 'Mark' from the fonts folder
+	font-family: "EBGaramond-Regular", sans-serif;
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	transition: 150ms;
+}
+
+a:hover {
+	opacity: 0.38;
+}
+
+h1 {
+	font-family: "EBGaramond-Bold", sans-serif;
+}
+
+header {
+	grid-row: 1 / 4;
+	grid-column: 2;
+	background-color: black;
+	z-index: 2;
+}
+
+main {
+	background-image: url(assets/background.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-row: 3 / 15;
+	grid-column: 1 / 6;
+
+	// add a background overlay to make the text more readable
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 1;
+	}
+
+	display: grid;
+	place-items: center;
+
+	h1 {
+		position: relative;
+		font-size: 4rem;
+		z-index: 2;
+	}
+}
+
+.line-wrap {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.line {
+	height: 100%;
+	// background-color: var(--clr-grey);
+	background-color: rgb(160 163 159);
+	width: 1px;
+	position: relative;
+	z-index: 2;
+
+	&-first {
+		grid-column: 2;
+		grid-row: 1 / 16;
+		// background-color: blue;
+	}
+
+	&-second {
+		grid-column: 3;
+		grid-row: 1 / 16;
+		// background-color: green;
+	}
+
+	&-third {
+		grid-column: 4;
+		grid-row: 1 / 16;
+		// background-color: yellow;
+	}
+
+	&-fourth {
+		grid-column: 5;
+		grid-row: 1 / 16;
+		// background-color: aqua;
+	}
+}
+
+.logo {
+	max-width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+footer {
+	grid-column: 1 / 6;
+	grid-row: 15 / 17;
+	height: 100%;
+
+	.subgrid {
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		align-items: center;
+		justify-content: center;
+
+		address {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		a {
+			text-align: center;
+		}
+	}
+}
