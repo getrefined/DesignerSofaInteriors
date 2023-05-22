@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: "EBGaramond-Bold";
-  src: url("fonts/EBGaramond-Bold.otf");
+  src: url("fonts/EBGaramond-Bold.ttf");
 }
 @font-face {
   font-family: "EBGaramond-Medium";
-  src: url("fonts/EBGaramond-Medium.otf");
+  src: url("fonts/EBGaramond-Medium.ttf");
 }
 @font-face {
   font-family: "EBGaramond-Regular";
-  src: url("fonts/EBGaramond-Regular.otf");
+  src: url("fonts/EBGaramond-Regular.ttf");
 }
 html,
 body {
