@@ -60,6 +60,7 @@ main {
   background-position: center;
   grid-row: 3/15;
   grid-column: 1/6;
+  position: relative;
   display: grid;
   place-items: center;
 }
