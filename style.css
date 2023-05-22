@@ -97,19 +97,19 @@ main h1 {
 }
 .line-first {
   grid-column: 2;
-  grid-row: 1/16;
+  grid-row: 1/17;
 }
 .line-second {
   grid-column: 3;
-  grid-row: 1/16;
+  grid-row: 1/17;
 }
 .line-third {
   grid-column: 4;
-  grid-row: 1/16;
+  grid-row: 1/17;
 }
 .line-fourth {
   grid-column: 5;
-  grid-row: 1/16;
+  grid-row: 1/17;
 }
 
 .logo {
@@ -124,6 +124,7 @@ footer {
   grid-column: 1/6;
   grid-row: 15/17;
   height: 100%;
+  color: var(--clr-grey);
 }
 footer .subgrid {
   height: 100%;
@@ -137,5 +138,13 @@ footer .subgrid address {
   margin-right: auto;
 }
 footer .subgrid a {
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--clr-grey);
+  text-decoration: none;
+}
+
+.tel {
+  grid-column: 4;
 }/*# sourceMappingURL=style.css.map */
